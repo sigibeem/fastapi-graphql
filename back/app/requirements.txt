@@ -1,6 +1,8 @@
+Cython
 fastapi==0.61.1
 uvicorn==0.12.2
 orator==0.9.9
+#pyyaml==5.4.1
 psycopg2-binary==2.8.6
 graphene==2.1.8
 graphene-pydantic==0.1.0
