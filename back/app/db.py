@@ -3,10 +3,10 @@ from orator import DatabaseManager, Schema, Model
 DATABASES = {
     "postgres": {
         "driver": "postgres",
-        "host": "172.18.0.2",
-        "database": "dbname",
+        "host": "postgres",
+        "database": "postgres",
         "user": "postgres",
-        "password": "postgres",
+        "password": "changeit",
         "prefix": "",
         "port": 5432
     }
