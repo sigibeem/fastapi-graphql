@@ -11,8 +11,6 @@ class CreateUsersTable(Migration):
             table.increments('id')
             table.string('name') # 追加
             table.text('address') # 追加
-            table.string('phone_number', 11) # 追加
-            table.enum('sex', ['male', 'female']) # 追加
             table.timestamps()
             
 

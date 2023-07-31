@@ -11,8 +11,9 @@ class CreatePostsTable(Migration):
             table.increments('id')
             table.integer('user_id').unsigned() # 追加
             table.foreign('user_id').references('id').on('users') # 追加
-            table.string('title') # 追加
-            table.text('body') # 追加
+            table.string('todo') # 追加
+            table.text('description') # 追加
+            table.enum('status', ['Done', 'Doing', 'Ready', 'not Ready'])
             table.timestamps()
 
     def down(self):

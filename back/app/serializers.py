@@ -14,8 +14,8 @@ class CommentsModel(BaseModel):
 class PostModel(BaseModel):
     id: int
     user_id: int
-    title: str
-    body: str
+    todo: str
+    description: str
     comments: Optional[List[CommentsModel]]
 
 

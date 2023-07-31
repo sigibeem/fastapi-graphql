@@ -67,8 +67,8 @@ class CreatePost(graphene.Mutation):
     def mutate(parent, info, post_details):
         user = User.find_or_fail(post_details.user_id)
         post = Post()
-        post.title = post_details.title
-        post.body = post_details.body
+        post.todo = post_details.todo
+        post.description = post_details.description
 
         user.posts().save(post)
 
