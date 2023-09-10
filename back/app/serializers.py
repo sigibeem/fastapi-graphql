@@ -22,6 +22,7 @@ class PostModel(BaseModel):
 class UserModel(BaseModel):
     id: int
     name: str
+    password: str
     address: str
     phone_number: str
     sex: str

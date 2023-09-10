@@ -10,7 +10,10 @@ class CreateUsersTable(Migration):
         with self.schema.create('users') as table:
             table.increments('id')
             table.string('name') # 追加
+            table.string('password') # 追加
+            table.string('phonenumber', 11)
             table.text('address') # 追加
+            table.enum('sex', ['male', 'female'])
             table.timestamps()
             
 

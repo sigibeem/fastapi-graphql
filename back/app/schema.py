@@ -49,6 +49,7 @@ class CreateUser(graphene.Mutation):
         user = User()
         user.name = user_details.name
         user.address = user_details.address
+        user.password = user_details.password
         user.phone_number = user_details.phone_number
         user.sex = user_details.sex
 
@@ -68,7 +69,7 @@ class CreatePost(graphene.Mutation):
         user = User.find_or_fail(post_details.user_id)
         post = Post()
         post.todo = post_details.todo
-        post.description = post_details.description
+        post.description= post_details.description
 
         user.posts().save(post)
 
